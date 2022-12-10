@@ -14,7 +14,15 @@ public class Backpack {
 		// Your mission is to go to school.
 		// 1. First you need to put all your supplies into your backpack - use
 		// the putInBackpack(...) methods
-
+		Pencil penn = new Pencil();
+		penn.write("Mechanical pencils are better");
+		Ruler rules = new Ruler();
+		rules.measure();
+		Textbook bool = new Textbook();
+		bool.read();
+		putInBackpack(penn);
+		putInBackpack(rules);
+		putInBackpack(bool);
 		goToSchool();
 	}
 
@@ -91,3 +99,4 @@ class Textbook extends Supply {
 		System.out.println("The history of Iceland is long and interesting");
 	}
 }
+
